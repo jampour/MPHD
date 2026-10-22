@@ -103,7 +103,7 @@ A sample JSON annotation file can be downloaded [here](samples/425-355001_2.json
 
 
 ## Metadata (`metadata.csv`)
-For bulk processing, filtering, and demographic analysis, a consolidated [`metadata.csv`](metadata.csv) file is provided in the root directory. It aggregates writer-level metadata and file paths across all 500 writers into a tabular format.
+For bulk processing, filtering, and demographic analysis, a consolidated [`metadata.csv`](samples/metadata.csv) file is provided in the root directory. It aggregates writer-level metadata and file paths across all 500 writers into a tabular format.
 
 ### Key Fields Included
 * **Demographics:** `subject_id`, `age`, `education_name`, `gender_name`, `handedness_name`, `spectacle_name`, `text2_category_name`
