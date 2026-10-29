@@ -4,6 +4,7 @@ This directory contains the dataset preparation script and the official training
 
 The benchmark evaluates the **Vision Transformer (HTR-VT)** architecture, which represents the state-of-the-art performance on this dataset.
 
+![HTR sample](../../images/htr_sample.jpg)
 ---
 
 ## Part 1: Dataset Preparation & Writer-Level Splits
@@ -43,11 +44,11 @@ mv train.ln val.ln test.ln test-t1.ln test-t2.ln data/persian/
    ```
 
 2. Copy the provided scripts from this directory into the cloned repository exactly as follows:
-   * `train_htrvt_base_repro_early.py` ➔ Copy to the **root** directory
-   * `test_persian.py` ➔ Copy to the **root** directory
-   * `valid.py` ➔ Replace the existing file in the **root** directory
-   * `utils/option.py` ➔ Replace the existing file in the **`utils/`** directory
-   * `data/dataset.py` ➔ Replace the existing file in the **`data/`** directory
+   * [`train_htrvt_base_repro_early.py`](train_htrvt_base_repro_early.py) ➔ Copy to the **root** directory
+   * [`test_persian.py`](test_persian.py) ➔ Copy to the **root** directory
+   * [`valid.py`](valid.py) ➔ Replace the existing file in the **root** directory
+   * [`utils/option.py`](option.py) ➔ Replace the existing file in the **`utils/`** directory
+   * [`data/dataset.py`](dataset.py) ➔ Replace the existing file in the **`data/`** directory
 
 3. Install the required Python packages:
    ```bash
