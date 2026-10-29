@@ -121,9 +121,9 @@ For bulk processing, filtering, and demographic analysis, a consolidated [`metad
 MPHD is designed to support multiple handwriting analysis tasks within a unified framework.
 
 
-### Handwriting Text Recognition (HTR)
+### Handwriting Text Recognition ([HTR](https://github.com/jampour/MPHD/tree/main/benchmarks/HTR))
 MPHD provides line-level annotated text for both fixed and variable content, enabling rigorous evaluation of HTR models under controlled and realistic conditions.
-The official writer-level split (70:15:15) partitions the data into 3,515 training, 767 validation, and 739 test lines (from 350, 75, and 75 writers, respectively). Dataset preparation and split generation script is available [here](benchmarks/htr/).
+The official writer-level split (70:15:15) partitions the data into 3,515 training, 767 validation, and 739 test lines (from 350, 75, and 75 writers, respectively). Dataset preparation and split generation script is available [here](https://github.com/jampour/MPHD/tree/main/benchmarks/HTR)/).
 
 ![HTR sample](images/htr_sample.jpg)
 
