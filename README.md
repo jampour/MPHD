@@ -69,8 +69,7 @@ Each writer's directory contains the following assets:
 ## Dataset Access
 A sample data file for one writer can be seen [here](samples/001-183001_3.zip).
 
-The full dataset is available via DOI: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23557640.svg)](https://doi.org/10.5281/zenodo.23557640)
-and a Backup version at: [![DOI](https://img.shields.io/badge/DOI-10.17632%2F2fcw6cd9gd.1-556B2F)](https://doi.org/10.17632/2fcw6cd9gd.1)
+The full dataset is available via DOI: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23557640.svg)](https://doi.org/10.5281/zenodo.23557640) and a Backup version at: [![DOI](https://img.shields.io/badge/DOI-10.17632%2F2fcw6cd9gd.1-556B2F)](https://doi.org/10.17632/2fcw6cd9gd.1)
 
 
 ## Annotation Format (`.json`)
@@ -78,8 +77,10 @@ Each writer directory contains a `.json` file housing ground-truth transcription
 
 ```json
 {
-  "writer_id": "050",
-  "demographics": {
+  "meta": {
+    "dataset": "MPHD",
+    "schema_version": "2.0",
+    "writer_id": "050",
     "age": 17,
     "education": "High School",
     "gender": "Female",
@@ -87,15 +88,19 @@ Each writer directory contains a `.json` file housing ground-truth transcription
     "spectacles": false,
     "text2_category": "Technology"
   },
+  "files": {
+    "fullform_name": "050-173010_3.png"
+  },
   "text1": {
     "full_text": "...",
-    "lines": { "text": ["line 1...", "line 2..."] }
+    "lines": { "count": 5, "text": ["line 1...", "line 2..."], "images": ["050-T1-Lines/050-T1-Line1", "..."] }
   },
   "text2": {
-    "category": 3,
+    "category": "Technology",
     "full_text": "...",
-    "lines": { "text": ["line 1...", "line 2..."] }
-  }
+    "lines": { "count": 5, "text": ["line 1...", "line 2..."], "images": ["050-T2-3-Lines/050-T2-3-Line1", "..."] }
+  },
+  "chars": { "count": 90, "folder": "Chars/" }
 }
 ```
 A sample JSON annotation file can be downloaded [here](samples/425-355001_2.json).
