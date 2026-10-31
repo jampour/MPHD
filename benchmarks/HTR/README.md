@@ -1,6 +1,6 @@
 # MPHD: Handwriting Text Recognition (HTR) Benchmark
 
-This directory contains the dataset preparation script and the official training/evaluation instructions to reproduce the Handwriting Text Recognition (HTR) benchmark results reported in the MPHD paper (Section 4.1, Table 7).
+This directory contains the dataset preparation script and the official training/evaluation instructions to reproduce the Handwriting Text Recognition (HTR) benchmark results reported in the MPHD paper (Section 4.1).
 
 The benchmark evaluates the **Vision Transformer (HTR-VT)** architecture, which represents the state-of-the-art performance on this dataset.
 
