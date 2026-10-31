@@ -1,6 +1,6 @@
 # MPHD Line Segmentation Benchmark
 
-This directory provides the official evaluation scripts to reproduce the Line Segmentation results reported in the MPHD paper (Section 4.2, Table 8, and Figures 6-7). 
+This directory provides the official evaluation scripts to reproduce the Line Segmentation results reported in the MPHD paper (Section 4.2). 
 
 The benchmark evaluates an off-the-shelf baseline using **EasyOCR** for word detection combined with a vertical grouping strategy.
 
@@ -26,7 +26,7 @@ To run the evaluation:
 
 1. Open the script and update the `DATASET_ROOT` variable to point to your extracted MPHD dataset:
    ```python
-   DATASET_ROOT = "../MPHD2/"  # Change this to your actual dataset path
+   DATASET_ROOT = "../MPHD/"  # Change this to your actual dataset path
    ```
 2. Run the script for **Protocol 1**:
    ```python
@@ -53,21 +53,11 @@ To run the evaluation:
 
 ## Step 2: Generate Table 8 Results
 
-To extract the metrics and print the LaTeX table rows for Table 8 in the paper, run:
+To extract the metrics and print the LaTeX table rows for Table 8 in the paper, run [Results_for_Table8.py](Results_for_Table8.py):
 ```bash
 python Results_for_Table8.py
 ```
 *This reads the generated JSON files and outputs the metrics (mIoU, F1-scores, LCA, RelCntErr, MeanSSIM) for both protocols.*
-
----
-
-## Step 3: Generate the IoU Distribution Plot (Figure 7)
-
-To generate the high-resolution histogram and KDE curves comparing the line-level IoU distributions of the two protocols, run:
-```bash
-python vis_IoU_Hist_Both.py
-```
-*This will output the statistical summary to the console and save the figure as `protocol_comparison_scientific.png`.*
 
 ---
 
@@ -78,3 +68,16 @@ For reproducibility verification, the expected metrics are approximately:
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Protocol 1** | 0.4354 | 0.6724 | 0.6766 | 0.3813 | 18.40 | 0.5366 | 0.9104 |
 | **Protocol 2** | 0.4526 | 0.6789 | 0.7072 | 0.3811 | 25.33 | 0.4857 | 0.9135 |
+
+---
+
+## Step 3: Generate the IoU Distribution Plot (Figure 7)
+
+To generate the high-resolution histogram and KDE curves comparing the line-level IoU distributions of the two protocols, run [vis_IoU_Hist_Both.py](vis_IoU_Hist_Both.py):
+```bash
+python vis_IoU_Hist_Both.py
+```
+*This will output the statistical summary to the console and save the figure as `protocol_comparison_scientific.png`.*
+
+![MPHD IoU Distribution Plot](../../images/writer_id_sample.jpg)
+
