@@ -20,7 +20,7 @@ The benchmark evaluates two standard CNN architectures: **ResNet-18** and **Dens
 1. Ensure you are in the `benchmarks/char_recognition/` directory.
 2. Open both `mphd_cnn_baseline_char.py` and `mphd_cnn_baseline_digit.py` and update the `DATA_ROOT` variable to point to your extracted MPHD dataset folder:
    ```python
-   DATA_ROOT = "../MPHD2"  # Change this to your actual dataset path
+   DATA_ROOT = "../MPHD"  # Change this to your actual dataset path
    ```
 3. Make sure the `.ln` files (`train.ln`, `val.ln`, `test.ln`) are located in the parent directory (`../`), as specified in the `TRAIN_LN`, `VAL_LN`, and `TEST_LN` variables.
 
