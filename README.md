@@ -128,21 +128,21 @@ The official writer-level split (70:15:15) partitions the data into 3,515 traini
 ![HTR sample](images/htr_sample.jpg)
 
 
-### Line Segmentation
+### [Line Segmentation](https://github.com/jampour/MPHD/tree/main/benchmarks/Line%20Segmentation)
 The dataset includes full text-region images together with corresponding line-level ground truth, making it suitable for developing and benchmarking line segmentation algorithms.
 Official dataset preparation and train/val/test split generation script is available [here](benchmarks/line_segmentation/).
 
 ![Line segmentation sample](images/line_segmentation_sample.jpg)
 
 
-### Writer Identification
+### [Writer Identification](https://github.com/jampour/MPHD/tree/main/benchmarks/Writer%20Identification)
 With samples from 500 writers and a dual-text design (fixed + variable), MPHD supports both closed-set and open-set text-independent writer identification.
 Official dataset preparation and train/val/test split generation script is available [here](benchmarks/writer_identification/).
 
 ![Writer identification sample](images/writer_id_sample.jpg)
 
 
-### Character/Digit Recognition
+### [Character/Digit Recognition](https://github.com/jampour/MPHD/tree/main/benchmarks/Character%20Recognition)
 Each writer contributed 90 isolated characters (letters, digits, punctuation, and symbols), providing a clean resource for fine-grained character and digit recognition.
 Official dataset preparation and train/val/test split generation script is available [here](benchmarks/char_recognition/).
 
