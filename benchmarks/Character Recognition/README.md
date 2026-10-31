@@ -8,7 +8,7 @@ The benchmark evaluates two standard CNN architectures: **ResNet-18** and **Dens
 
 ## Prerequisites
 1. Download the MPHD dataset from [Zenodo](https://doi.org/10.5281/zenodo.23557640) and extract it.
-2. Ensure you have already generated the official `.ln` split files (`train.ln`, `val.ln`, `test.ln`) as described in the HTR benchmark section.
+2. Ensure you have already generated the official `.ln` split files (`train.ln`, `val.ln`, `test.ln`) as described in the step 1.1 and 1.2 of [HTR benchmark section](https://github.com/jampour/MPHD/tree/main/benchmarks/HTR).
 3. Install the required Python packages:
    ```bash
    pip install torch torchvision scikit-learn seaborn matplotlib
@@ -64,7 +64,7 @@ To generate the Top-10 substitution confusion matrices (as shown in Figure 10 of
    ```
 *This will output the top substitutions in the console and save high-resolution confusion matrices (`mphd_confusion_matrix_[MODEL_NAME].png`) for both Test and Validation splits.*
 
-![Character Recognition Confusion Matrices](../../images/mphd_confusion_matrix_char.png)
+![Character Recognition Confusion Matrices](../../images/isolated_chars_sample.jpg)
 
 ---
 
