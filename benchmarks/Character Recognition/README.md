@@ -18,7 +18,7 @@ The benchmark evaluates two standard CNN architectures: **ResNet-18** and **Dens
 
 ## Step 1: Setup & Configuration
 1. Ensure you are in the `benchmarks/char_recognition/` directory.
-2. Open both `mphd_cnn_baseline_char.py` and `mphd_cnn_baseline_digit.py` and update the `DATA_ROOT` variable to point to your extracted MPHD dataset folder:
+2. Open both [`mphd_cnn_baseline_char.py`](mphd_cnn_baseline_char.py) and [`mphd_cnn_baseline_digit.py`](mphd_cnn_baseline_digit.py) and update the `DATA_ROOT` variable to point to your extracted MPHD dataset folder:
    ```python
    DATA_ROOT = "../MPHD"  # Change this to your actual dataset path
    ```
@@ -57,7 +57,7 @@ To generate the Top-10 substitution confusion matrices (as shown in Figure 10 of
    mkdir ResNet18
    mv mphd_char62_best.pt ResNet18/
    ```
-2. Open `mphd_10_confusion_matrix.py` and ensure the `MODEL_NAME` variable matches your folder name.
+2. Open [`mphd_10_confusion_matrix.py`](mphd_10_confusion_matrix.py) and ensure the `MODEL_NAME` variable matches your folder name.
 3. Run the evaluation script:
    ```bash
    python mphd_10_confusion_matrix.py
